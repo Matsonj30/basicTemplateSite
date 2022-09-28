@@ -1,0 +1,17 @@
+$black: #1A181B;
+$purple: #564D65;
+$blue: #6290C8;
+$green: #74A57F;
+$font: 'Oswald', sans-serif;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}
+
+body{
+    background-color: $green;
+}
+@import "_headerMenu.scss";

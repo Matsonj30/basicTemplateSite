@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background-color: #74A57F;
+}
+
+.headerMenu {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0px 20px 0 rgb(83, 83, 83);
+}
+.headerMenu img {
+  height: 250px;
+}
+.headerMenu ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  width: 100%;
+}
+.headerMenu ul li {
+  padding-right: 100px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.headerMenu ul a {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=style.css.map */
