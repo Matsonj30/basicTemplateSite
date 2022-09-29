@@ -4,13 +4,27 @@
     background-color: $black;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     ul{
         display: flex;
         list-style: none;
+        padding-right: 100px;
         a{
-            padding-right: 30px;
             text-decoration: none;
             color: white;
+           
+        }
+        li{
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+        .fa{
+            transition: 0.25s ease-in-out;
+        }
+        .fa:hover{
+            opacity: 60%;
         }
     }
+  
 }
+ 

@@ -1,5 +1,6 @@
 $blacks: #1A181B;
 $black: #39373b;
+$grey: #474747;
 $purple: #564D65;
 $blue: #6290C8;
 $green: #74A57F;
@@ -18,3 +19,4 @@ body{
 @import "_headerMenu.scss";
 @import "_footer.scss";
 @import "_mediaAndContact.scss";
+@import "_mainContent.scss"

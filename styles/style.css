@@ -17,7 +17,7 @@ body {
   height: 150px;
   width: 100%;
   background-color: white;
-  color: #39373b;
+  color: #474747;
   box-shadow: 0 0px 20px 0 rgb(83, 83, 83);
 }
 .headerMenu img {
@@ -66,13 +66,56 @@ body {
   background-color: #39373b;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 .mediaAndContact ul {
   display: flex;
   list-style: none;
+  padding-right: 100px;
 }
 .mediaAndContact ul a {
-  padding-right: 30px;
   text-decoration: none;
   color: white;
+}
+.mediaAndContact ul li {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.mediaAndContact ul .fa {
+  transition: 0.25s ease-in-out;
+}
+.mediaAndContact ul .fa:hover {
+  opacity: 60%;
+}
+
+.centerMainContent {
+  display: flex;
+  align-items: center;
+  height: 500px;
+}
+
+.mainContent {
+  width: 400px;
+  padding-left: 250px;
+}
+.mainContent h1 {
+  font-size: 50px;
+  padding-bottom: 15px;
+  line-height: 55px;
+}
+.mainContent p {
+  font-size: 20px;
+}
+.mainContent button {
+  width: 120px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  border: 0px;
+}
+.mainContent .learnMoreCallNow {
+  display: flex;
+  padding-top: 15px;
 }/*# sourceMappingURL=style.css.map */
