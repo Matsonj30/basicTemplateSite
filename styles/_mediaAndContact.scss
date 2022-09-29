@@ -1,0 +1,16 @@
+.mediaAndContact{
+    height: 30px;
+    width: 100%;
+    background-color: $black;
+    display: flex;
+    justify-content: flex-end;
+    ul{
+        display: flex;
+        list-style: none;
+        a{
+            padding-right: 30px;
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
