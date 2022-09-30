@@ -4,7 +4,7 @@ $purple: #564D65;
 $lavender:#E9D2F4;
 $blue: #6290C8;
 $green: #74A57F;
-$darkgreen: #47634c;
+$darkgreen: #56775c;
 $font: 'Oswald', sans-serif;
 
 
@@ -20,4 +20,5 @@ body{
 @import "_headerMenu.scss";
 @import "_footer.scss";
 @import "_mediaAndContact.scss";
-@import "_mainContent.scss"
+@import "_mainContent.scss";
+@import "_otherServices.scss";
