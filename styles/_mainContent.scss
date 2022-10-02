@@ -1,11 +1,16 @@
 .centerMainContent{
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 500px;
+
+    .alignSellingPoint{
+        width: 400px;
+    }
 }
 .mainContent{
     width: 400px;
-    padding-left: 15vw;
+    
     h1{
         font-size: 50px;
         padding-bottom: 15px;
