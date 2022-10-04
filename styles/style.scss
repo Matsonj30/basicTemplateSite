@@ -1,7 +1,7 @@
 $black: #39373b;
 $grey: #474747;
 $purple: #564D65;
-$lavender:#E9D2F4;
+$lavender:#86b3b970;
 $blue: #6290C8;
 $green: #74A57F;
 $darkgreen: #56775c;
@@ -16,6 +16,12 @@ $font: 'Oswald', sans-serif;
 
 body{
     background-color: $green;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+   
 }
 @import "_headerMenu.scss";
 @import "_footer.scss";
