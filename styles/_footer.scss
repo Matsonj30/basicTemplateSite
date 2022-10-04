@@ -3,4 +3,12 @@
     width: 100%;
     background-color: $black;
     position: relative;
+    display: flex;
+    .companyInfo{
+        display: flex;
+        img{
+            height: 190px;
+        }
+    }
+   
 }
