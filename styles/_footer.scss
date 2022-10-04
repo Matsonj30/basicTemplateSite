@@ -6,8 +6,26 @@
     display: flex;
     .companyInfo{
         display: flex;
+        align-items: center;
+      
+        .companyDescription{
+            width: 300px;
+            color: white;
+        }
         img{
             height: 190px;
+        }
+        .companyMenu{
+            display: flex;
+            flex-direction: column;
+            a{
+                text-decoration: none;
+            }
+            ul{
+                list-style: none;
+                
+            }
+          
         }
     }
    
