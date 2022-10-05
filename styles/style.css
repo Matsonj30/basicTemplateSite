@@ -58,13 +58,23 @@ body {
 }
 
 .footer {
-  height: 200px;
+  height: 230px;
   width: 100%;
   background-color: #39373b;
   position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   color: white;
+  font-size: 16px;
+}
+.footer .fa {
+  padding-right: 6px;
+}
+.footer .fa-instagram, .footer .fa-twitter {
+  transform: translateY(1px);
+}
+.footer .fa-facebook, .footer .fa-linkedin {
+  transform: translateY(-1px);
 }
 .footer a {
   text-decoration: none;
@@ -76,24 +86,44 @@ body {
 }
 .footer .companyInfo .companyDescription {
   width: 300px;
-  color: rgb(216, 211, 211);
+  color: white;
 }
 .footer .companyInfo img {
-  height: 190px;
+  height: 230px;
+}
+.footer .footerSection {
+  padding-right: 50px;
+  padding-left: 50px;
 }
 .footer .footerSection .topOfSection {
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 20px;
 }
 .footer .footerSection li {
   padding-bottom: 15px;
 }
-.footer .companySocials {
-  display: flex;
-  flex-direction: column;
+.footer .companySocials .socialsContainer {
+  width: 21px;
 }
+
 ul {
   list-style: none;
+}
+
+.wrapperNoCenter {
+  display: flex;
+  transition: 0.25s ease-in-out;
+}
+
+.wrapperNoCenter:hover {
+  opacity: 60%;
+}
+
+.companyMenu a {
+  transition: 0.25s;
+}
+.companyMenu a:hover {
+  opacity: 60%;
 }
 
 .mediaAndContact {
@@ -199,7 +229,7 @@ ul {
 }
 .otherServices .service p {
   font-size: 20px;
-  margin: 0px 15px;
+  margin: 5px 15px;
 }
 .otherServices .service .fa {
   font-size: 80px;
@@ -212,11 +242,10 @@ ul {
   border: 0px;
   font-size: 20px;
   font-weight: 600;
-  letter-spacing: 0.5px;
   border-radius: 4px;
   margin-right: 15px;
   transition: 0.25s ease-in-out;
-  margin: 30px 15px;
+  margin: 45px 15px;
   border: 1px solid #39373b;
 }
 .otherServices .service button:hover {
@@ -231,4 +260,15 @@ ul {
 }
 .otherServices .service3 {
   background-color: #474747;
+}
+
+@media (max-width: 1060px) { 
+  .otherServices {
+    flex-direction: column;
+    align-items: center;
+    height: 1500px;
+  }
+  .otherServices .service {
+    margin-top: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */

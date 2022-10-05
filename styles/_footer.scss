@@ -1,13 +1,22 @@
 .footer{
-    height: 200px;
+    height: 230px;
     width: 100%;
     background-color: $black;
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     color: white;
-  
-   
+    font-size: 16px;
+    .fa{
+        padding-right: 6px;
+    }
+    .fa-instagram, .fa-twitter{
+        transform: translateY(1px);
+    }
+    .fa-facebook, .fa-linkedin{
+        transform: translateY(-1px);
+    }
+ 
     a{
         text-decoration: none;
         color:white;
@@ -19,16 +28,18 @@
       
         .companyDescription{
             width: 300px;
-            color: rgb(216, 211, 211);
+            color: white
         }
         img{
-            height: 190px;
+            height: 230px;
         }
         
     }
     .footerSection{
+        padding-right: 50px;
+        padding-left: 50px;
         .topOfSection{
-            padding-top: 20px;
+            padding-top: 30px;
             padding-bottom: 20px;
         }
         li{
@@ -37,18 +48,28 @@
         }
       
     }
-    .companyMenu{
-       
-    }
+
     .companySocials{
-      display: flex;
-      flex-direction: column;
-       
-    }
-    .companyContact{
-       
+        .socialsContainer{
+            width: 21px;
+        }
     }
 }
 ul{
     list-style: none;
+}
+.wrapperNoCenter{
+    display: flex;
+    transition: 0.25s ease-in-out;
+}
+.wrapperNoCenter:hover{
+    opacity: 60%;
+}
+.companyMenu{
+    a{
+        transition: 0.25s;
+    }
+    a:hover{
+        opacity: 60%;
+    }
 }
