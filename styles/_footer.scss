@@ -4,29 +4,51 @@
     background-color: $black;
     position: relative;
     display: flex;
+    justify-content: space-around;
+    color: white;
+  
+   
+    a{
+        text-decoration: none;
+        color:white;
+        
+    }
     .companyInfo{
         display: flex;
         align-items: center;
       
         .companyDescription{
             width: 300px;
-            color: white;
+            color: rgb(216, 211, 211);
         }
         img{
             height: 190px;
         }
-        .companyMenu{
-            display: flex;
-            flex-direction: column;
-            a{
-                text-decoration: none;
-            }
-            ul{
-                list-style: none;
-                
-            }
-          
-        }
+        
     }
-   
+    .footerSection{
+        .topOfSection{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        li{
+            padding-bottom: 15px;
+           
+        }
+      
+    }
+    .companyMenu{
+       
+    }
+    .companySocials{
+      display: flex;
+      flex-direction: column;
+       
+    }
+    .companyContact{
+       
+    }
+}
+ul{
+    list-style: none;
 }
