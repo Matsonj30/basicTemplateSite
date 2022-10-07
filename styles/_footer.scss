@@ -73,3 +73,53 @@ ul{
         opacity: 60%;
     }
 }
+@media (max-width: 1060px){
+    .footer{
+        display: grid;
+        height: fit-content;
+        grid-template-rows: 150px 150px 150px ;
+        grid-template-columns: 150px 150px;
+        grid-template-areas: 
+        "a a" 
+        "b b"
+        "c d"
+        "e f";
+                              
+        .footerSection{
+            width: 200px;
+            padding: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            
+        }
+        .companyInfo{
+            .companyDescription{
+                grid-area: b;
+            }
+            img{
+                grid-area: a;
+                display: flex;
+                justify-content: center;
+            }
+            
+        }
+        .companyMenu{
+            grid-area: c;
+            display: flex;
+            justify-content: center;
+        }
+        .companySocials{
+            grid-area: d;
+        }
+        .companyContact{
+            grid-area: e;
+            display: flex;
+            padding: 0;
+            justify-content: center;
+            padding-left: 30px;
+         
+        }
+    }
+}

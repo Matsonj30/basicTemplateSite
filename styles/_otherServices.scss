@@ -59,9 +59,18 @@
     .otherServices{
         flex-direction: column;
         align-items: center;
-        height: 1000px;
+        height: 1400px;
+        width: 100%;
         .service{
             margin-top: 25px;
+            margin-right: 0;
+            margin:0;
+            height: 415px;
+            width: 100%;
+            border: 1px solid white;
+            box-shadow: none;
         }
+       
+
     }
 }

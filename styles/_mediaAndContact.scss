@@ -29,4 +29,13 @@
     }
   
 }
- 
+
+@media (max-width: 1064px){
+    .mediaAndContact{
+        justify-content: center;
+        
+        ul{
+            padding: 0;
+        }
+    }
+}
