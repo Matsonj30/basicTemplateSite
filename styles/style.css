@@ -213,10 +213,13 @@ ul {
   width: 400px;
   margin-right: 30px;
 }
+.centerMainContent .noMargin {
+  margin: 0;
+}
 
 .mainContent {
   width: 400px;
-  margin-right: 30px;
+  margin: 0px 30px;
 }
 .mainContent h1 {
   font-size: 50px;
@@ -224,7 +227,7 @@ ul {
   line-height: 55px;
 }
 .mainContent p {
-  font-size: 20px;
+  font-size: 16px;
 }
 .mainContent button {
   width: 150px;
@@ -235,7 +238,7 @@ ul {
   font-weight: 600;
   letter-spacing: 0.5px;
   border-radius: 4px;
-  margin-right: 15px;
+  margin-right: 20px;
   transition: 0.25s ease-in-out;
 }
 .mainContent button:hover {
@@ -244,7 +247,7 @@ ul {
 }
 .mainContent .learnMoreCallNow {
   display: flex;
-  padding-top: 15px;
+  padding-top: 20px;
   transition: 0.5s ease-in-out;
 }
 .mainContent .learnMoreCallNow .callNow {
@@ -257,6 +260,9 @@ ul {
 .mainContent .learnMoreCallNow .callNow #callNowAboveNumber {
   font-size: 16px;
 }
+.mainContent .learnMoreCallNow .callNow .details {
+  padding-top: 6px;
+}
 
 @media (max-width: 1060px) {
   .mainContent {
@@ -265,6 +271,7 @@ ul {
   .centerMainContent {
     justify-content: center;
     height: 400px;
+    padding-left: 10px;
   }
   .alignSellingPoint {
     display: none;
@@ -315,28 +322,52 @@ ul {
 }
 .otherServices .service1 {
   background-color: #474747;
+  margin-left: 15px;
 }
 .otherServices .service2 {
   background-color: #474747;
 }
 .otherServices .service3 {
   background-color: #474747;
+  margin-right: 15px;
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 1160px) {
+  .otherServices .service {
+    height: 380px;
+    width: 380px;
+  }
+  .otherServices .service h2 {
+    font-size: 28px;
+  }
+  .otherServices .service p {
+    font-size: 16px;
+  }
+  .otherServices .service .fa {
+    font-size: 50px;
+  }
+  .otherServices .service button {
+    width: 125px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 930px) {
+  .otherServices .service button {
+    margin: 20px 15px;
+  }
+}
+@media (max-width: 775px) {
   .otherServices {
     flex-direction: column;
     align-items: center;
-    height: 1400px;
-    width: 100%;
+    height: 1050px;
   }
   .otherServices .service {
-    margin-top: 25px;
-    margin-right: 0;
     margin: 0;
-    height: 415px;
-    width: 100%;
-    border: 1px solid white;
+    margin-top: 20px;
+    width: min(100%, 450px);
+    height: 300px;
     box-shadow: none;
   }
 }/*# sourceMappingURL=style.css.map */
