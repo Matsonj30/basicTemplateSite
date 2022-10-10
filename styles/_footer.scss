@@ -104,11 +104,15 @@ ul{
             }
         }
         .footerSection{
-            padding-top: 30px;
+            padding-top: 70px;
             width: 192px;
             padding: 0;
             display: flex;
             justify-content: center;
+
+            .topOfSection{
+                padding-top: 55px;
+            }
         }
     }
 }

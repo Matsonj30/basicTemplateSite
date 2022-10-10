@@ -1,7 +1,7 @@
 .headerMenu{
     position: sticky;
     top: 0;
-    display: none;
+    display: flex;
     align-items: center;
     z-index: 2;
     height: 150px;
@@ -27,7 +27,7 @@
         }
         li{
             padding-right: 6vw;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 600;
             :after{
                 display: block;
@@ -45,4 +45,7 @@
         }
         
     }
+}
+@media(max-width:900px){
+    
 }

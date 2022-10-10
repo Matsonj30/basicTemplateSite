@@ -17,7 +17,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  display: none;
+  display: flex;
   align-items: center;
   z-index: 2;
   height: 150px;
@@ -41,7 +41,7 @@ body {
 }
 .headerMenu ul li {
   padding-right: 6vw;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
 }
 .headerMenu ul li :after {
@@ -157,11 +157,14 @@ ul {
     height: 190px;
   }
   .footer .footerSection {
-    padding-top: 30px;
+    padding-top: 70px;
     width: 192px;
     padding: 0;
     display: flex;
     justify-content: center;
+  }
+  .footer .footerSection .topOfSection {
+    padding-top: 55px;
   }
 }
 @media (max-width: 575px) {
