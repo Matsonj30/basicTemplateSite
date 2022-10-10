@@ -5,6 +5,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+
     color: white;
     font-size: 16px;
     .fa{
@@ -31,13 +32,12 @@
             color: white
         }
         img{
-            height: 230px;
+            height: 220px;
         }
         
     }
     .footerSection{
-        padding-right: 50px;
-        padding-left: 50px;
+        padding: 0px 50px;
         .topOfSection{
             padding-top: 30px;
             padding-bottom: 20px;
@@ -48,11 +48,13 @@
         }
       
     }
-
     .companySocials{
         .socialsContainer{
             width: 21px;
         }
+    }
+    .companyContact{
+        padding-right: 0px;
     }
 }
 ul{
@@ -73,53 +75,47 @@ ul{
         opacity: 60%;
     }
 }
-@media (max-width: 1060px){
-    .footer{
-        display: grid;
-        height: fit-content;
-        grid-template-rows: 150px 150px 150px ;
-        grid-template-columns: 150px 150px;
-        grid-template-areas: 
-        "a a" 
-        "b b"
-        "c d"
-        "e f";
-                              
-        .footerSection{
-            width: 200px;
-            padding: 0;
-            width: 100%;
-            display: flex;
-            justify-content: center;
 
-            
+@media(max-width:1100px){
+    .footer{
+        .footerSection{
+            padding: 0px 20px;
         }
+    }
+}
+@media(max-width: 970px){
+    .footer{
+        height: fit-content;
+        flex-wrap: wrap;
         .companyInfo{
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
             .companyDescription{
-                grid-area: b;
+                text-align: center;
             }
-            img{
-                grid-area: a;
+            .companyInfoImage{
+                width: 100%;
                 display: flex;
                 justify-content: center;
+                img{
+                    height: 190px;
+                }
             }
-            
         }
-        .companyMenu{
-            grid-area: c;
-            display: flex;
-            justify-content: center;
-        }
-        .companySocials{
-            grid-area: d;
-        }
-        .companyContact{
-            grid-area: e;
-            display: flex;
+        .footerSection{
+            padding-top: 30px;
+            width: 192px;
             padding: 0;
+            display: flex;
             justify-content: center;
-            padding-left: 30px;
-         
         }
+    }
+}
+@media(max-width: 575px){
+    .footer{
+      .companyContact{
+        text-align: center;
+      }
     }
 }

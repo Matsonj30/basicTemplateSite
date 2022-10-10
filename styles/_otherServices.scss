@@ -56,30 +56,6 @@
 }
 //---------------------------------Adjust-----------------------------------------------------
 
-
-// @media (max-width: 1060px){ //if display is under 1060 px
-//     .otherServices{
-     
-//         flex-direction: column;
-//         align-items: center;
-//         height: 1400px;
-        
-//         .service{
-            
-//             margin-top: 25px;
-//             margin-right: 0;
-//             margin:0;
-//             height: fit-content;
-//             width: min(95%, 400px);
-//             border: 1px solid white;
-//             box-shadow: none;
-            
-//         }
-       
-
-//     }
-// }
-
 @media (max-width: 1160px){
     .otherServices{
         .service{
@@ -120,9 +96,20 @@
         .service{
             margin: 0;
             margin-top: 20px;
-            width: min(100%, 450px);
+            width: min(100%, 400px);
             height: 300px;
             box-shadow: none;
+
+            button{
+                margin: 10px 15px;
+            }
+        }
+    }
+}
+@media(max-width: 320px){
+    .otherServices{
+        .service{
+            height: fit-content;
         }
     }
 }

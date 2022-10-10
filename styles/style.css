@@ -89,11 +89,10 @@ body {
   color: white;
 }
 .footer .companyInfo img {
-  height: 230px;
+  height: 220px;
 }
 .footer .footerSection {
-  padding-right: 50px;
-  padding-left: 50px;
+  padding: 0px 50px;
 }
 .footer .footerSection .topOfSection {
   padding-top: 30px;
@@ -104,6 +103,9 @@ body {
 }
 .footer .companySocials .socialsContainer {
   width: 21px;
+}
+.footer .companyContact {
+  padding-right: 0px;
 }
 
 ul {
@@ -126,45 +128,45 @@ ul {
   opacity: 60%;
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 1100px) {
+  .footer .footerSection {
+    padding: 0px 20px;
+  }
+}
+@media (max-width: 970px) {
   .footer {
-    display: grid;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    grid-template-rows: 150px 150px 150px;
-    grid-template-columns: 150px 150px;
-    grid-template-areas: "a a" "b b" "c d" "e f";
+    flex-wrap: wrap;
   }
-  .footer .footerSection {
-    width: 200px;
-    padding: 0;
+  .footer .companyInfo {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer .companyInfo .companyDescription {
+    text-align: center;
+  }
+  .footer .companyInfo .companyInfoImage {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  .footer .companyInfo .companyDescription {
-    grid-area: b;
+  .footer .companyInfo .companyInfoImage img {
+    height: 190px;
   }
-  .footer .companyInfo img {
-    grid-area: a;
-    display: flex;
-    justify-content: center;
-  }
-  .footer .companyMenu {
-    grid-area: c;
-    display: flex;
-    justify-content: center;
-  }
-  .footer .companySocials {
-    grid-area: d;
-  }
-  .footer .companyContact {
-    grid-area: e;
-    display: flex;
+  .footer .footerSection {
+    padding-top: 30px;
+    width: 192px;
     padding: 0;
+    display: flex;
     justify-content: center;
-    padding-left: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .footer .companyContact {
+    text-align: center;
   }
 }
 .mediaAndContact {
@@ -271,7 +273,7 @@ ul {
   .centerMainContent {
     justify-content: center;
     height: 400px;
-    padding-left: 10px;
+    padding-left: 0px;
   }
   .alignSellingPoint {
     display: none;
@@ -366,8 +368,18 @@ ul {
   .otherServices .service {
     margin: 0;
     margin-top: 20px;
-    width: min(100%, 450px);
+    width: min(100%, 400px);
     height: 300px;
     box-shadow: none;
+  }
+  .otherServices .service button {
+    margin: 10px 15px;
+  }
+}
+@media (max-width: 320px) {
+  .otherServices .service {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }/*# sourceMappingURL=style.css.map */
