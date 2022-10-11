@@ -28,9 +28,6 @@ body {
 }
 .headerMenu .fa {
   display: none;
-  font-size: 40px;
-  position: absolute;
-  margin-left: 90vw;
 }
 .headerMenu img {
   height: 100px;
@@ -76,14 +73,14 @@ body {
   .headerMenu .fa {
     display: block;
     position: absolute;
+    font-size: 40px;
     right: 15px;
-    top: 30px;
+    top: 22px;
   }
   .headerMenu ul {
-    display: block;
+    display: none;
     background-color: rgb(255, 255, 255);
     flex-basis: 100%;
-    transform: translateY(-4px);
     text-align: center;
     transition: 0.5s ease-in-out;
   }
@@ -96,6 +93,9 @@ body {
   }
   .headerMenu ul li :hover::after {
     transform: scaleX(0);
+  }
+  .headerMenu img {
+    height: 80px;
   }
 }
 .footer {
