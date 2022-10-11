@@ -22,7 +22,12 @@
         .fa{
             font-size: 80px;
             margin-top: 20px;
+           
+            :hover{
+                animation: spin 1s;
+            }
         }
+        
         button{
             width: 150px;
             height: 50px;
@@ -75,6 +80,9 @@
                 height: 40px;
                 font-size: 16px;
             }
+            button:hover{
+                box-shadow: inset 0 0 0 0;
+            }
         }
     }
     
@@ -102,6 +110,7 @@
 
             button{
                 margin: 10px 15px;
+              
             }
         }
     }

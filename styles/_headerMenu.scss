@@ -12,7 +12,10 @@
 
     .fa{
         display: none;
-    
+        
+    }
+    .fa:active{
+        animation: spin 1s;
     }
     img{
         height: 100px;
@@ -26,24 +29,27 @@
         a{
             text-decoration: none;
             color: black;
+            padding-right: 6vw;
+            
+            
             :after{
                 display: block;
                 content: "";
                 border-bottom: 3px solid $green;
                 transform: scaleX(0);
                 transition: 250ms ease-in-out;
+                
             }
             :hover::after{
                 transform: scaleX(1);
                 transform-origin: 50% 100%;
-                display: block;
+                
             }
         }
         li{
-            padding-right: 6vw;
+            height: 26px;
             font-size: 22px;
             font-weight: 600;   
-            
         }
         
     }
@@ -63,26 +69,45 @@
             right: 15px;
             top: 22px;
             
+            :hover{
+                animation: spin 1s;
+            }
         }
+       
         ul{
             display: none;
             background-color: rgb(255, 255, 255);
             flex-basis: 100%;
             text-align: center;
             transition: 0.5s ease-in-out;
-            :hover{
-                background-color: rgba(201, 200, 200, 0.582);
-              
-            }
+           
             li{
                 padding: 0;
                 padding-top: 15px;
+                
             }
+            a{
+                :hover{
+                    background-color: rgba(201, 200, 200, 0.582);
+                  
+                }
+            }
+            
         }
         img{
             height: 80px;
         }   
 
+        
+    }
+}
+@keyframes spin{ 
+    25%{
+        transform: rotate(0deg);
+        
+    }
+    100%{
+        transform: rotate(90deg);
         
     }
 }
