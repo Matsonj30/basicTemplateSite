@@ -42,22 +42,22 @@ body {
   text-decoration: none;
   color: black;
 }
-.headerMenu ul li {
-  padding-right: 6vw;
-  font-size: 22px;
-  font-weight: 600;
-}
-.headerMenu ul li :after {
+.headerMenu ul a :after {
   display: block;
   content: "";
   border-bottom: 3px solid #74A57F;
   transform: scaleX(0);
   transition: 250ms ease-in-out;
 }
-.headerMenu ul li :hover::after {
+.headerMenu ul a :hover::after {
   transform: scaleX(1);
   transform-origin: 50% 100%;
   display: block;
+}
+.headerMenu ul li {
+  padding-right: 6vw;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 @media (max-width: 890px) {
@@ -90,9 +90,6 @@ body {
   .headerMenu ul li {
     padding: 0;
     padding-top: 15px;
-  }
-  .headerMenu ul li :hover::after {
-    transform: scaleX(0);
   }
   .headerMenu img {
     height: 80px;

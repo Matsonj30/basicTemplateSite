@@ -26,12 +26,6 @@
         a{
             text-decoration: none;
             color: black;
-          
-        }
-        li{
-            padding-right: 6vw;
-            font-size: 22px;
-            font-weight: 600;
             :after{
                 display: block;
                 content: "";
@@ -44,6 +38,11 @@
                 transform-origin: 50% 100%;
                 display: block;
             }
+        }
+        li{
+            padding-right: 6vw;
+            font-size: 22px;
+            font-weight: 600;   
             
         }
         
@@ -78,9 +77,6 @@
             li{
                 padding: 0;
                 padding-top: 15px;
-                :hover::after{
-                    transform: scaleX(0);
-                }
             }
         }
         img{
