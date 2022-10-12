@@ -5,12 +5,18 @@
 function showPage(){
     url = window.location.href;
     console.log(url);
-    
-    if(url == "http://192.168.4.22:5500/templates/home.html"){
-        var currentPageTab = document.getElementById("homePage");
-        console.log(currentPageTab)
-        currentPageTab.style.borderBottom = "3px solid #74A57F"
-        
+    switch(url){
+        case "http://192.168.4.22:5500/templates/home.html":
+            var currentPageTab = document.getElementById("homePage");
+            currentPageTab.style.borderBottom = "3px solid #74A57F"
+            break
+        case "http://192.168.4.22:5500/templates/gallery.html":
+            var currentPageTab = document.getElementById("galleryPage");
+            currentPageTab.style.borderBottom = "3px solid #74A57F"
+            break
+    }
+  {
+     
     }
 }
 

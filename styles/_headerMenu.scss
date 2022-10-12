@@ -15,10 +15,12 @@
         
     }
     .fa:active{
-        animation: spin 1s;
+        animation: spin 0.5s;
+        animation-fill-mode: forwards;
     }
     img{
         height: 100px;
+        padding-left: 40px;
     }
     ul{
         display: flex;
@@ -69,9 +71,6 @@
             right: 15px;
             top: 22px;
             
-            :hover{
-                animation: spin 1s;
-            }
         }
        
         ul{

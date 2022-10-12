@@ -1,0 +1,25 @@
+.photoGallery{
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(4, 150px);
+
+    grid-template-areas:
+    "1 1 2 2"
+    "1 1 2 2"
+    "4 4 6 6"
+    "4 4 6 6"
+    ;
+
+    #img1{
+        grid-area: 1;
+    }
+    #img2{
+        grid-area: 2;
+    }
+    #img3{
+        grid-area: 4;
+    }
+    #img4{
+        grid-area: 6;
+    }
+}   

@@ -24,8 +24,20 @@ body{
     justify-content: center;
    
 }
+
+//css for header/footer on all pages
 @import "_headerMenu.scss";
 @import "_footer.scss";
 @import "_mediaAndContact.scss";
+
+
+//css for home.html
+
 @import "_mainContent.scss";
 @import "_otherServices.scss";
+
+
+
+//css for gallery.html
+@import "_photoGallery.scss"
+
