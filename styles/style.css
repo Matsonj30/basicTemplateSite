@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgba(143, 127, 74, 0.3215686275);
+  background-color: rgba(74, 123, 143, 0.231372549);
 }
 
 .wrapper {
@@ -354,7 +354,7 @@ ul {
   margin-right: 30px;
   border-radius: 3px;
   color: white;
-  box-shadow: 0 20px 30px 0 rgb(83, 83, 83);
+  box-shadow: 5px 20px 15px 0 rgb(83, 83, 83);
 }
 .otherServices .service h2 {
   font-size: 35px;
@@ -365,7 +365,7 @@ ul {
   margin: 5px 15px;
 }
 .otherServices .service .fa {
-  font-size: 80px;
+  font-size: 70px;
   margin-top: 20px;
 }
 .otherServices .service button {
@@ -386,14 +386,14 @@ ul {
   cursor: pointer;
 }
 .otherServices .service1 {
-  background-color: #474747;
+  background-color: #90A959;
   margin-left: 15px;
 }
 .otherServices .service2 {
-  background-color: #474747;
+  background-color: #345678;
 }
 .otherServices .service3 {
-  background-color: #474747;
+  background-color: #142e47;
   margin-right: 15px;
 }
 
