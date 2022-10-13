@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #74A57F;
+  background-color: rgba(143, 127, 74, 0.3215686275);
 }
 
 .wrapper {
@@ -304,7 +304,7 @@ ul {
   transition: 0.25s ease-in-out;
 }
 .mainContent button:hover {
-  box-shadow: inset 150px 0 0 0 #56775c;
+  box-shadow: inset 150px 0 0 0 #74A57F;
   cursor: pointer;
 }
 .mainContent .learnMoreCallNow {
@@ -382,7 +382,7 @@ ul {
   border: 1px solid #39373b;
 }
 .otherServices .service button:hover {
-  box-shadow: inset 150px 0 0 0 #56775c;
+  box-shadow: inset 150px 0 0 0 #74A57F;
   cursor: pointer;
 }
 .otherServices .service1 {
@@ -451,19 +451,80 @@ ul {
 }
 .photoGallery {
   display: grid;
-  grid-template-columns: repeat(4, 150px);
-  grid-template-rows: repeat(4, 150px);
-  grid-template-areas: "1 1 2 2" "1 1 2 2" "4 4 6 6" "4 4 6 6";
+  grid-template-columns: repeat(11, 50px);
+  grid-template-rows: repeat(20, 50px);
+  grid-gap: 5px;
+}
+.photoGallery img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 .photoGallery #img1 {
-  grid-area: 1;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 6;
 }
 .photoGallery #img2 {
-  grid-area: 2;
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
 }
 .photoGallery #img3 {
-  grid-area: 4;
+  grid-column-start: 9;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 8;
 }
 .photoGallery #img4 {
-  grid-area: 6;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 13;
+}
+.photoGallery #img6 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 13;
+}
+.photoGallery #img7 {
+  grid-column-start: 9;
+  grid-column-end: 12;
+  grid-row-start: 8;
+  grid-row-end: 13;
+}
+.photoGallery #img8 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 13;
+  grid-row-end: 16;
+}
+.photoGallery #img10 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 13;
+  grid-row-end: 18;
+}
+.titleSection {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.titleSection :before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border: 5px solid rgba(128, 128, 128, 0.514);
+  z-index: 1;
+  margin: auto;
+}
+.titleSection h1 {
+  font-size: 50px;
 }/*# sourceMappingURL=style.css.map */

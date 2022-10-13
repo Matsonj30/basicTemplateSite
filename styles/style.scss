@@ -1,12 +1,13 @@
 $black: #39373b;
 $grey: #474747;
-$purple: #564D65;
-$lavender:#86b3b970;
-$blue: #6290C8;
 $green: #74A57F;
-$darkgreen: #56775c;
-$font:'proxima-nova', sans-serif;
 
+
+$darkgreen: #56775c;
+$darkgreen: #74A57F;
+$font:'proxima-nova', sans-serif;
+$backgroundColor: #CFC7D2;
+$backgroundColor: #8f7f4a52;
 
 
 *{
@@ -16,7 +17,7 @@ $font:'proxima-nova', sans-serif;
 }
 
 body{
-    background-color: $green;
+    background-color: $backgroundColor;
 }
 
 .wrapper{
@@ -38,6 +39,8 @@ body{
 
 
 
-//css for gallery.html
-@import "_photoGallery.scss"
+//css for gallery.html;
+@import "_photoGallery.scss";
 
+//css for about.html
+@import "_aboutUsTitle.scss";
