@@ -386,14 +386,15 @@ ul {
   cursor: pointer;
 }
 .otherServices .service1 {
-  background-color: #90A959;
+  background-color: rgba(17, 100, 184, 0.5411764706);
   margin-left: 15px;
+  color: black;
 }
 .otherServices .service2 {
   background-color: #345678;
 }
 .otherServices .service3 {
-  background-color: #142e47;
+  background-color: rgba(20, 46, 71, 0.862745098);
   margin-right: 15px;
 }
 
