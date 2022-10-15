@@ -485,8 +485,8 @@ ul {
   margin-right: 30px;
   border-radius: 3px;
   color: white;
-  -webkit-box-shadow: 0 20px 30px 0 #535353;
-          box-shadow: 0 20px 30px 0 #535353;
+  -webkit-box-shadow: 5px 20px 15px 0 #535353;
+          box-shadow: 5px 20px 15px 0 #535353;
 }
 
 .otherServices .service h2 {
@@ -500,7 +500,7 @@ ul {
 }
 
 .otherServices .service .fa {
-  font-size: 80px;
+  font-size: 70px;
   margin-top: 20px;
 }
 
