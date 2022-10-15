@@ -39,20 +39,21 @@
             border: 1px solid $black;
         }
         button:hover{
-            box-shadow: inset 150px 0 0 0 $darkgreen;
+            box-shadow: inset 150px 0 0 0 $lightblue;
             cursor: pointer;
         }    
     }
     .service1{
-        background-color: $grey;
+        background-color: $blue;
         margin-left: 15px;
     }
     .service2{
-        background-color: $grey;
+        background-color: $blue;
     }
     .service3{
-        background-color: $grey;
+        background-color: $blue;
         margin-right: 15px;
+       
     }
 }
 //---------------------------------Adjust-----------------------------------------------------
@@ -100,7 +101,7 @@
         .service{
             margin: 0;
             margin-top: 20px;
-            width: min(100%, 400px);
+            width: calc(min(100%, 400px));
             height: 300px;
             box-shadow: none;
 
