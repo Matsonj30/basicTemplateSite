@@ -686,7 +686,7 @@ ul {
   grid-row-end: 18;
 }
 
-.titleSection {
+.aboutUs .titleSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -698,19 +698,25 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #39373b;
 }
 
-.titleSection :before {
+.aboutUs .titleSection :before {
   content: "";
   position: absolute;
-  width: 220px;
-  height: 220px;
-  border: 5px solid rgba(128, 128, 128, 0.514);
+  width: 120px;
+  height: 120px;
+  border: 5px solid #02333d;
   z-index: -1;
   margin: auto;
+  -webkit-transform: translateX(40px) translateY(-30px) rotate(45deg);
+          transform: translateX(40px) translateY(-30px) rotate(45deg);
+  background-color: #02333d;
 }
 
-.titleSection h1 {
+.aboutUs .titleSection h1 {
   font-size: 50px;
+  color: #FAFAFA;
+  z-index: 1;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,23 +1,27 @@
-.titleSection{
-    display: flex;
-    height: 200px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    
-    :before{
-        content: "";
-        position: absolute;
-        width: 220px;
-        height: 220px;
-        border: 5px solid rgba(128, 128, 128, 0.514);
-        z-index: -1;
-        margin: auto;
-    
+.aboutUs{
+    .titleSection{
+        display: flex;
+        height: 200px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: $black;
+        :before{
+            content: "";
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border: 5px solid $blue;
+            z-index: -1;
+            margin: auto;
+            transform:  translateX(40px) translateY(-30px) rotate(45deg);
+            background-color: $blue;
+        }
+        h1{
+            font-size: 50px;
+            color: $backgroundColor;
+            z-index: 1;
+        }
+        
     }
-    h1{
-        font-size: 50px;
-       
-    }
-   
 }
