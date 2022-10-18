@@ -29,20 +29,25 @@
         .memberSection{
             padding-bottom: 75px;
             img{
-                width: min(95%,450px);
+                width: calc(min(95%,450px));
                 height: 300px;
-                border: 2px solid lightgray;
+                border: 2px solid $blue;
                 margin: 0px 10px;
             }
             .memberHeader{
-                padding-left: 10px;
+                margin-left: 10px;
+                padding-left: 5px;
                 border-left: 3px solid $blue;
+                padding-top: 3px;
                 h3{
-                    font-size: 28px;
-                    
+                    font-size: 28px;   
+                }
+                p{
+                    font-size: 16px;
                 }
             }
            .memberDescription{
+                padding-top: 15px;
                 padding-left: 10px;
            }
         }
