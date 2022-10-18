@@ -1,27 +1,51 @@
 .aboutUs{
     .titleSection{
         display: flex;
-        height: 200px;
+        height: 250px;
         width: 100%;
         justify-content: center;
         align-items: center;
-        background-color: $black;
+        background-color: #808080;
         :before{
             content: "";
             position: absolute;
-            width: 120px;
-            height: 120px;
-            border: 5px solid $blue;
+            width: 230px;
+            height: 150px;
+            border: 10px solid $blue;
             z-index: -1;
             margin: auto;
-            transform:  translateX(40px) translateY(-30px) rotate(45deg);
-            background-color: $blue;
+            transform:  translateX(8px) translateY(-45px);
+           
         }
         h1{
-            font-size: 50px;
+            font-size: 60px;
             color: $backgroundColor;
             z-index: 1;
+        }  
+    }
+    .aboutUsMembers{
+        padding-top: 100px;
+
+        .memberSection{
+            padding-bottom: 75px;
+            img{
+                width: min(95%,450px);
+                height: 300px;
+                border: 2px solid lightgray;
+                margin: 0px 10px;
+            }
+            .memberHeader{
+                padding-left: 10px;
+                border-left: 3px solid $blue;
+                h3{
+                    font-size: 28px;
+                    
+                }
+            }
+           .memberDescription{
+                padding-left: 10px;
+           }
         }
-        
     }
 }
+
