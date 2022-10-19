@@ -28,19 +28,31 @@
         }  
     }
     
+
+
+
+
     .introduction{
         padding-left: 10px;
        
         .introHeader{
             border-left: 4px solid $blue;
             padding-left: 5px;
-           
+          
             #header{
                 color: $blue;
                 font-weight: bold;
                 font-size: 12px;
-                
             }
+            #header:before{
+                content: "";
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background-color: $blueshade;
+                z-index: -1;
+             
+            }   
             h3{
                 font-size: 25px;
                 
@@ -51,17 +63,13 @@
             padding-top: 15px;
             
         }
-        #teamDescription::before{
-            content: "";
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            background-color: rgba(96, 95, 95, 0.129);
-            transform: translate(0px, -200px);
-            z-index: -1;
-        }   
-      
+       
     }
+
+
+
+
+
     .aboutUsMembers{
         padding-top: 100px;
         
@@ -82,20 +90,20 @@
                     color: $blue;
                     font-weight: bold;
                 }
+                .memberPosition:before{
+                    content: "";
+                    position: absolute;
+                    width: 100px;
+                    height: 100px;
+                    background-color: $blueshade;
+                    z-index: -1;
+                }   
             }
            .memberDescription{
                 padding-top: 15px;
                 
            }
-           .memberDescription:before{
-            content: "";
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            background-color: rgba(96, 95, 95, 0.129);
-           
-            z-index: -1;
-        }   
+          
           
         
         }
