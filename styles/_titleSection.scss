@@ -1,0 +1,25 @@
+.titleSection{
+    display: flex;
+    height: 250px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: $black;
+    margin-bottom: 50px;
+    ::before{
+        content: "";
+        position: absolute;
+        width: 230px;
+        height: 150px;
+        border: 10px solid $blue;
+        z-index: -1;
+        margin: auto;
+        transform:  translateX(8px) translateY(-45px);
+       
+    }
+    h1{
+        font-size: 60px;
+        color: $backgroundColor;
+        z-index: 1;
+    }  
+}

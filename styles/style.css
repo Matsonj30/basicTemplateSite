@@ -444,146 +444,72 @@ ul {
     height: fit-content;
   }
 }
-.photoGallery {
-  display: grid;
-  grid-template-columns: repeat(11, 50px);
-  grid-template-rows: repeat(20, 50px);
-  grid-gap: 5px;
-}
-.photoGallery img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
+.gallery {
   width: 100%;
+  height: auto;
+  background-color: #39373b;
 }
-.photoGallery #img1 {
-  grid-column-start: 1;
-  grid-column-end: 6;
-  grid-row-start: 1;
-  grid-row-end: 6;
+.gallery .mainImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
 }
-.photoGallery #img2 {
-  grid-column-start: 6;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 6;
+.gallery .mainImages img {
+  display: none;
+  height: 300px;
+  width: auto;
 }
-.photoGallery #img3 {
-  grid-column-start: 9;
-  grid-column-end: 12;
-  grid-row-start: 1;
-  grid-row-end: 8;
+.gallery .mainImages #img2 {
+  display: block;
 }
-.photoGallery #img4 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 6;
-  grid-row-end: 13;
+.gallery .bottomImages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.photoGallery #img6 {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 6;
-  grid-row-end: 13;
+.gallery .bottomImages img {
+  height: 100px;
 }
-.photoGallery #img7 {
-  grid-column-start: 9;
-  grid-column-end: 12;
-  grid-row-start: 8;
-  grid-row-end: 13;
+.gallery .bottomImages img:hover {
+  opacity: 60%;
 }
-.photoGallery #img8 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 13;
-  grid-row-end: 16;
-}
-.photoGallery #img10 {
-  grid-column-start: 4;
-  grid-column-end: 7;
-  grid-row-start: 13;
-  grid-row-end: 18;
-}
+
 .aboutUs p {
   font-size: 16px;
 }
-.aboutUs .titleSection {
-  display: flex;
-  height: 250px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  background-color: #39373b;
-  margin-bottom: 50px;
+.aboutUs .headerSection {
+  border-left: 4px solid #025b6d;
+  padding-left: 5px;
 }
-.aboutUs .titleSection ::before {
+.aboutUs .headerSection p {
+  color: #025b6d;
+  font-weight: bold;
+  font-size: 12px;
+}
+.aboutUs .headerSection p:before {
   content: "";
   position: absolute;
-  width: 230px;
-  height: 150px;
-  border: 10px solid #025b6d;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(2, 91, 109, 0.0745098039);
   z-index: -1;
-  margin: auto;
-  transform: translateX(8px) translateY(-45px);
 }
-.aboutUs .titleSection h1 {
-  font-size: 60px;
-  color: #FAFAFA;
-  z-index: 1;
+.aboutUs .headerSection h3 {
+  font-size: 25px;
 }
 .aboutUs .introduction {
   padding-left: 10px;
 }
-.aboutUs .introduction .introHeader {
-  border-left: 4px solid #025b6d;
-  padding-left: 5px;
-}
-.aboutUs .introduction .introHeader #header {
-  color: #025b6d;
-  font-weight: bold;
-  font-size: 12px;
-}
-.aboutUs .introduction .introHeader #header:before {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: rgba(2, 91, 109, 0.0745098039);
-  z-index: -1;
-}
-.aboutUs .introduction .introHeader h3 {
-  font-size: 25px;
-}
-.aboutUs .introduction #teamDescription {
-  padding-top: 15px;
+.aboutUs .introduction .headerSection h3 {
+  margin-bottom: 15px;
 }
 .aboutUs .aboutUsMembers {
   padding-top: 100px;
-}
-.aboutUs .aboutUsMembers .memberSection {
-  padding-bottom: 75px;
   padding-left: 10px;
 }
-.aboutUs .aboutUsMembers .memberSection .memberHeader {
-  padding-left: 5px;
-  border-left: 4px solid #025b6d;
-  padding-top: 3px;
-}
-.aboutUs .aboutUsMembers .memberSection .memberHeader h3 {
-  font-size: 25px;
-}
-.aboutUs .aboutUsMembers .memberSection .memberHeader p {
-  font-size: 12px;
-  color: #025b6d;
-  font-weight: bold;
-}
-.aboutUs .aboutUsMembers .memberSection .memberHeader .memberPosition:before {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: rgba(2, 91, 109, 0.0745098039);
-  z-index: -1;
+.aboutUs .aboutUsMembers .memberSection {
+  padding-bottom: 100px;
 }
 .aboutUs .aboutUsMembers .memberSection .memberDescription {
   padding-top: 15px;
@@ -594,8 +520,60 @@ ul {
   border: 2px solid #025b6d;
 }
 
-@media (min-width: 890px) {
-  .memberSection {
-    display: flex;
+@media (min-width: 964px) {
+  .aboutUs .textSection {
+    width: 500px;
   }
+  .aboutUs .introduction {
+    display: flex;
+    justify-content: center;
+  }
+  .aboutUs .aboutUsMembers .memberSection {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1320px) {
+  .aboutUs p {
+    font-size: 19px;
+  }
+  .aboutUs .textSection {
+    width: 800px;
+  }
+  .aboutUs .textSection .headerSection p {
+    font-size: 14px;
+  }
+  .aboutUs .textSection .headerSection h3 {
+    font-size: 30px;
+  }
+  .aboutUs img {
+    margin-right: 70px;
+  }
+}
+.titleSection {
+  display: flex;
+  height: 250px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #39373b;
+  margin-bottom: 50px;
+}
+.titleSection ::before {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 150px;
+  border: 10px solid #025b6d;
+  z-index: -1;
+  margin: auto;
+  transform: translateX(8px) translateY(-45px);
+}
+.titleSection h1 {
+  font-size: 60px;
+  color: #FAFAFA;
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */
