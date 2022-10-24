@@ -14,6 +14,10 @@ function showPage(){ //for mainMenu Section
             var currentPageTab = document.getElementById("galleryPage");
             currentPageTab.style.borderBottom = "3px solid #025b6d"
             break
+        case "http://192.168.4.22:5500/templates/about.html":
+            var currentPageTab = document.getElementById("aboutPage");
+            currentPageTab.style.borderBottom = "3px solid #025b6d"
+            break
     }
   {
      
@@ -30,22 +34,28 @@ function showMenu(){ //for mainMenu section
     }
     //this is def better to do by switching the class name isntead of styling in JS
 }
-window.addEventListener("resize", function(resizeWindow){
-    var currentMenuState = document.getElementById("burgerMenu");
-    if(document.body.clientWidth >= 890){
-        currentMenuState.style.display ="flex"
-    }
-    else{
-        currentMenuState.style.display ="none"
-    }
-})
 
-function changePicture(pictureNumber){
+
+function changePicture(pictureNumber){ //for gallery section
+    var topImages = document.getElementsByClassName("picture")
+    for(let i = 0; i < topImages.length; i++){
+        topImages[i].style.display = "none";
+    }
     var selectedImage = document.getElementById("img"+pictureNumber)
+
     selectedImage.style.display = "block"
 }
 
-
+function arrowChange(directon){ //for gallery section
+    var topImages = document.getElementsByClassName("picture")
+    console.log("CLICKED")
+    for(let i = 0; i < topImages.length; i++){
+        if(topImages[i].style.display == "block"){
+            console.log(i + directon)
+            changePicture(i + directon)
+        }
+    }
+}
 
 
 showPage()

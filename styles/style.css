@@ -457,10 +457,10 @@ ul {
 }
 .gallery .mainImages img {
   display: none;
-  height: 300px;
+  height: 250px;
   width: auto;
 }
-.gallery .mainImages #img2 {
+.gallery .mainImages #img1 {
   display: block;
 }
 .gallery .bottomImages {
@@ -555,22 +555,23 @@ ul {
 }
 .titleSection {
   display: flex;
-  height: 250px;
+  height: 200px;
   width: 100%;
   justify-content: center;
   align-items: center;
   background-color: #39373b;
+  background-image: url(/images/gridBackground.svg);
   margin-bottom: 50px;
 }
 .titleSection ::before {
   content: "";
   position: absolute;
   width: 230px;
-  height: 150px;
+  height: 100px;
   border: 10px solid #025b6d;
   z-index: -1;
   margin: auto;
-  transform: translateX(8px) translateY(-45px);
+  transform: translateX(8px) translateY(-23px);
 }
 .titleSection h1 {
   font-size: 60px;
