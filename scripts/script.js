@@ -38,24 +38,33 @@ function showMenu(){ //for mainMenu section
 
 function changePicture(pictureNumber){ //for gallery section
     var topImages = document.getElementsByClassName("picture")
+   
     for(let i = 0; i < topImages.length; i++){
         topImages[i].style.display = "none";
     }
-    var selectedImage = document.getElementById("img"+pictureNumber)
-
+    if(pictureNumber == 11){
+        var selectedImage = document.getElementById("img"+0)
+    } //go to start
+    else if(pictureNumber == -1){
+        var selectedImage = document.getElementById("img"+10) 
+    }
+    else{
+        var selectedImage = document.getElementById("img"+pictureNumber)
+    }
     selectedImage.style.display = "block"
 }
 
 function arrowChange(directon){ //for gallery section
     var topImages = document.getElementsByClassName("picture")
-    console.log("CLICKED")
+
     for(let i = 0; i < topImages.length; i++){
         if(topImages[i].style.display == "block"){
-            console.log(i + directon)
             changePicture(i + directon)
+            break
         }
     }
 }
 
-
 showPage()
+var firstImage = document.getElementById("img0")
+firstImage.style.display = "block"

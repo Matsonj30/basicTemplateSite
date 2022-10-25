@@ -3,6 +3,27 @@
     height: auto;
     background-color: $black;
     
+    .arrowContainer{
+        display: flex;
+        justify-content: space-around;
+        transform: translate(0, 200px);
+
+        .fa{
+            font-size: 35px;
+            color: $backgroundColor;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+        .fa:hover{
+            background-color: $blue;
+        }
+    }
+
+   
     .mainImages{
         display: flex;
         justify-content: center;
@@ -12,8 +33,12 @@
             display: none;
             height: 250px;
             width: auto;
+            transition: 0.25s ease-in-out;
         }
-        #img1{
+        img:hover{
+            transform: scale(1.5);
+        }
+        #img0{
             display: block;
         }
     }
@@ -23,13 +48,24 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        padding-bottom: 10px;
+    
         img{
             height: 100px;
+            padding-right: 3px;
         }
         img:hover{
             opacity: 60%;
         }
     }
     
-   
+    
+}
+@media(max-width:500px){
+    .gallery{
+        .arrowContainer{
+            justify-content: space-between;
+            padding: 0px 10px;
+        }
+    }    
 }

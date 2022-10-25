@@ -28,9 +28,7 @@
     button{
         width: 150px;
         height: 50px;
-
-       
-        background-color: white;
+        background-color: $green;
         border: 0px;
         font-size: 20px;
         font-weight: 600;
@@ -38,7 +36,7 @@
 
         border-radius: 4px;
         margin-right: 20px;
-        transition: 0.25s ease-in-out;
+        transition: 0.35s ease-in-out;
     }
     button:hover{
         box-shadow: inset 150px 0 0 0 $lightblue;

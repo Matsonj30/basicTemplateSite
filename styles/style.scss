@@ -3,9 +3,11 @@ $font:'proxima-nova', sans-serif;
 
 $black: #39373b;
 $gray: #5f5f5f;
-$green: #aefa67;
+$green: rgb(214, 174, 64);
 $blue: #025b6d;
-$lightblue: #1d9ab6;
+//$blue: rgb(0, 63, 117);
+
+$lightblue: #31b7d4;
 $blueshade: #025b6d13;
 $backgroundColor: #FAFAFA;
 
@@ -30,7 +32,7 @@ body{
 @import "_headerMenu.scss";
 @import "_footer.scss";
 @import "_mediaAndContact.scss";
-
+@import "_titleSection.scss";
 
 //css for home.html
 
@@ -44,4 +46,3 @@ body{
 
 //css for about.html
 @import "_aboutUsTitle.scss";
-@import "_titleSection.scss"

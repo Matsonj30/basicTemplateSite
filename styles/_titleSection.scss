@@ -6,7 +6,6 @@
     align-items: center;
     background-color: $black;
     background-image: url(/images/gridBackground.svg);
-    margin-bottom: 50px;
     
     ::before{
         content: "";
@@ -16,12 +15,23 @@
         border: 10px solid $blue;
         z-index: -1;
         margin: auto;
-        transform:  translateX(8px) translateY(-23px);
-       
     }
     h1{
         font-size: 60px;
         color: $backgroundColor;
         z-index: 1;
+    }  
+}
+.aboutTitle{
+    margin-bottom: 50px;
+    ::before{
+        transform:  translateX(8px) translateY(-23px);
+    }  
+}
+.galleryTitle{
+    margin-bottom: 10px;
+    ::before{
+        width: 170px;
+        transform:  translateX(8px) translateY(-23px);
     }  
 }
