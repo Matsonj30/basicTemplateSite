@@ -1,0 +1,55 @@
+.contactUs{
+    height: fit-content;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    .section{
+        width: 250px;
+        text-align: center;
+        margin-right: 10px;
+        
+        h1{
+            font-size: 20px;
+            padding: 10px 0px;
+            color: $blue;
+        }
+        p{
+            font-size: 16px;
+            padding-bottom: 10px;
+           
+        }
+    
+    }
+    .sectionBlue{
+        background-color: $blue;
+        h1{
+            color: $backgroundColor;
+        }
+        p{
+            color: $backgroundColor;
+        }
+        .fa{
+            color: $backgroundColor;
+        }
+
+    }
+    .sectionGray{
+        background-color: $gray;
+        .fa{
+            color: $blue;
+        }
+    }
+    .fa{
+        padding-top: 10px;
+        font-size: 50px;
+    }
+
+
+}
+iframe{
+    width: 1000px;
+    height: 500px;
+    padding-bottom: 40px;
+    }

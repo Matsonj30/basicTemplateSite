@@ -52,7 +52,7 @@ body {
 .headerMenu ul a :after {
   display: block;
   content: "";
-  border-bottom: 3px solid #025b6d;
+  border-bottom: 3px solid rgb(59, 95, 126);
   transform: scaleX(0);
   transition: 250ms ease-in-out;
 }
@@ -120,7 +120,7 @@ body {
 .footer {
   height: 230px;
   width: 100%;
-  background-color: #025b6d;
+  background-color: rgb(59, 95, 126);
   position: absolute;
   display: flex;
   justify-content: center;
@@ -274,26 +274,24 @@ ul {
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #39373b;
-  background-image: url(/images/gridBackground.svg);
+  background-color: rgba(2, 91, 109, 0.0745098039);
+  background-image: url(/images/gridBackgroundGray.svg);
 }
-.titleSection ::before {
+.titleSection ::after {
+  display: block;
   content: "";
-  position: absolute;
-  width: 230px;
-  height: 100px;
-  border: 10px solid #025b6d;
-  z-index: -1;
-  margin: auto;
+  border-bottom: 5px solid rgb(59, 95, 126);
+  transform: scaleX(0.3);
 }
 .titleSection h1 {
   font-size: 60px;
-  color: #FAFAFA;
+  color: black;
   z-index: 1;
 }
 
 .aboutTitle {
   margin-bottom: 50px;
+  background-image: none;
 }
 .aboutTitle ::before {
   transform: translateX(8px) translateY(-23px);
@@ -301,9 +299,19 @@ ul {
 
 .galleryTitle {
   margin-bottom: 10px;
+  background-image: none;
+  background-color: #FAFAFA;
 }
 .galleryTitle ::before {
   width: 170px;
+  transform: translateX(8px) translateY(-23px);
+}
+
+.contactTitle {
+  margin-bottom: 40px;
+}
+.contactTitle ::before {
+  width: 280px;
   transform: translateX(8px) translateY(-23px);
 }
 
@@ -332,7 +340,7 @@ ul {
 .mainContent button {
   width: 150px;
   height: 50px;
-  background-color: rgb(214, 174, 64);
+  background-color: #fce070;
   border: 0px;
   font-size: 20px;
   font-weight: 600;
@@ -390,10 +398,9 @@ ul {
   width: 400px;
   height: 450px;
   margin-right: 30px;
-  border-radius: 3px;
+  border-radius: 8%;
   color: white;
-  background-color: #025b6d;
-  box-shadow: 5px 20px 15px 0 rgb(83, 83, 83);
+  background-color: rgb(59, 95, 126);
 }
 .otherServices .service h2 {
   font-size: 35px;
@@ -410,7 +417,7 @@ ul {
 .otherServices .service button {
   width: 150px;
   height: 50px;
-  background-color: rgb(214, 174, 64);
+  background-color: #fce070;
   border: 0px;
   font-size: 20px;
   font-weight: 600;
@@ -458,7 +465,7 @@ ul {
     margin: 20px 15px;
   }
 }
-@media (max-width: 775px) {
+@media (max-width: 778px) {
   .otherServices {
     flex-direction: column;
     align-items: center;
@@ -503,7 +510,7 @@ ul {
   border-radius: 50%;
 }
 .gallery .arrowContainer .fa:hover {
-  background-color: #025b6d;
+  background-color: rgb(59, 95, 126);
 }
 .gallery .mainImages {
   display: flex;
@@ -547,11 +554,11 @@ ul {
   font-size: 16px;
 }
 .aboutUs .headerSection {
-  border-left: 4px solid #025b6d;
+  border-left: 4px solid rgb(59, 95, 126);
   padding-left: 5px;
 }
 .aboutUs .headerSection p {
-  color: #025b6d;
+  color: rgb(59, 95, 126);
   font-weight: bold;
   font-size: 12px;
 }
@@ -585,7 +592,7 @@ ul {
 .aboutUs img {
   width: min(95%, 450px);
   height: 300px;
-  border: 2px solid #025b6d;
+  border: 2px solid rgb(59, 95, 126);
 }
 
 @media (min-width: 964px) {
@@ -620,4 +627,55 @@ ul {
   .aboutUs img {
     margin-right: 70px;
   }
+}
+.contactUs {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.contactUs .section {
+  width: 250px;
+  text-align: center;
+  margin-right: 10px;
+}
+.contactUs .section h1 {
+  font-size: 20px;
+  padding: 10px 0px;
+  color: rgb(59, 95, 126);
+}
+.contactUs .section p {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.contactUs .sectionBlue {
+  background-color: rgb(59, 95, 126);
+}
+.contactUs .sectionBlue h1 {
+  color: #FAFAFA;
+}
+.contactUs .sectionBlue p {
+  color: #FAFAFA;
+}
+.contactUs .sectionBlue .fa {
+  color: #FAFAFA;
+}
+.contactUs .sectionGray {
+  background-color: #e2e1e1;
+}
+.contactUs .sectionGray .fa {
+  color: rgb(59, 95, 126);
+}
+.contactUs .fa {
+  padding-top: 10px;
+  font-size: 50px;
+}
+
+iframe {
+  width: 1000px;
+  height: 500px;
+  padding-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */

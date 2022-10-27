@@ -2,11 +2,13 @@ $font:'proxima-nova', sans-serif;
 
 
 $black: #39373b;
-$gray: #5f5f5f;
-$green: rgb(214, 174, 64);
-$blue: #025b6d;
+$gray: #e2e1e1;
+$accent: #fce070;
+$accentshade: rgba(241, 122, 168, 0.274);
 //$blue: rgb(0, 63, 117);
-
+$blue: rgb(59, 95, 126);
+//$blue: #083045;
+$lighterblue: rgb(61, 125, 180);
 $lightblue: #31b7d4;
 $blueshade: #025b6d13;
 $backgroundColor: #FAFAFA;
@@ -45,4 +47,7 @@ body{
 @import "_photoGallery.scss";
 
 //css for about.html
-@import "_aboutUsTitle.scss";
+@import "_aboutUs.scss";
+
+//css for contact.html
+@import "_contact.scss";

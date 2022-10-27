@@ -4,34 +4,52 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: $black;
-    background-image: url(/images/gridBackground.svg);
+    background-color: $blueshade;
+    background-image: url(/images/gridBackgroundGray.svg);
     
-    ::before{
-        content: "";
-        position: absolute;
-        width: 230px;
-        height: 100px;
-        border: 10px solid $blue;
-        z-index: -1;
-        margin: auto;
+    ::after{
+        display: block;
+            content: "";
+            border-bottom: 5px solid $blue;
+            transform: scaleX(0.3);
+            
     }
+    // ::before{
+    //     content: "";
+    //     position: absolute;
+    //     width: 230px;
+    //     height: 100px;
+    //     border: 10px solid rgba(59, 95, 126, 0.404);
+    //     z-index: -1;
+    //     margin: auto;
+    // }
     h1{
         font-size: 60px;
-        color: $backgroundColor;
+        color: black;
         z-index: 1;
     }  
 }
 .aboutTitle{
     margin-bottom: 50px;
-    ::before{
+    background-image: none;
+    ::before{ //not needed but incase we want to go back to boxes
         transform:  translateX(8px) translateY(-23px);
     }  
 }
 .galleryTitle{
     margin-bottom: 10px;
+    background-image: none;
+    background-color: $backgroundColor;
+    
     ::before{
         width: 170px;
+        transform:  translateX(8px) translateY(-23px);
+    }  
+}
+.contactTitle{
+    margin-bottom: 40px;
+    ::before{
+        width: 280px;
         transform:  translateX(8px) translateY(-23px);
     }  
 }
