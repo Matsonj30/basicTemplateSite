@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     background-color: $blueshade;
-    background-image: url(/images/gridBackgroundGray.svg);
+  //  background-image: url(/images/gridBackgroundGray.svg);
     
     ::after{
         display: block;
@@ -37,10 +37,6 @@
     }  
 }
 .galleryTitle{
-    margin-bottom: 10px;
-    background-image: none;
-    background-color: $backgroundColor;
-    
     ::before{
         width: 170px;
         transform:  translateX(8px) translateY(-23px);

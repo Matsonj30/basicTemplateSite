@@ -275,7 +275,6 @@ ul {
   justify-content: center;
   align-items: center;
   background-color: rgba(2, 91, 109, 0.0745098039);
-  background-image: url(/images/gridBackgroundGray.svg);
 }
 .titleSection ::after {
   display: block;
@@ -297,11 +296,6 @@ ul {
   transform: translateX(8px) translateY(-23px);
 }
 
-.galleryTitle {
-  margin-bottom: 10px;
-  background-image: none;
-  background-color: #FAFAFA;
-}
 .galleryTitle ::before {
   width: 170px;
   transform: translateX(8px) translateY(-23px);
