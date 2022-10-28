@@ -1,14 +1,15 @@
 .contactUs{
     height: fit-content;
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
 
     .section{
         width: 250px;
+        height: 190px;
         text-align: center;
-        margin-right: 10px;
+        margin: 0px 5px;
         
         h1{
             font-size: 20px;
@@ -36,7 +37,7 @@
 
     }
     .sectionGray{
-        background-color: $gray;
+        background-color: $blueshade;
         .fa{
             color: $blue;
         }
@@ -49,7 +50,86 @@
 
 }
 iframe{
-    width: 1000px;
+    width: calc(min(1000px, 100%));
     height: 500px;
     padding-bottom: 40px;
+}
+
+@media(max-width:880px){
+    .contactUs{
+        flex-wrap: wrap;
+
+        .address{
+            order:1;
+        }
+        .callToday{
+            order:2;
+        }
+        .emailUs{
+            order:3;
+            
+        }
+        .openingHours{
+            order:4;
+            margin-top: 10px;
+        }
     }
+  
+}
+@media(max-width:779px){
+    .contactUs{
+        .section{
+            margin-top: 10px;
+        }
+        .address{
+            order:2;
+        }
+        .callToday{
+            order:1;
+        }
+        .emailUs{
+            order:3;
+            margin-top: 10px;
+        }
+        .openingHours{
+            order:4;
+           
+        }
+    }
+}
+@media(max-width:779px){
+    .contactUs{
+        .address{
+            order:2;
+        }
+        .callToday{
+            order:1;
+        }
+        .emailUs{
+            order:3;
+            margin-top: 10px;
+        }
+        .openingHours{
+            order:4;
+           
+        }
+    }
+}
+@media(max-width:519px){
+    .contactUs{
+        .address{
+            order:1;
+        }
+        .callToday{
+            order:2;
+        }
+        .emailUs{
+            order:3;
+            margin-top: 10px;
+        }
+        .openingHours{
+            order:4;
+           
+        }
+    }
+}
