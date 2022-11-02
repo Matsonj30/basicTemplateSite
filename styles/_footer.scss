@@ -29,7 +29,8 @@
       
         .companyDescription{
             width: 300px;
-            color: white
+            color: white;
+            font-size: 18px;
         }
         img{
             height: 220px;
@@ -44,7 +45,7 @@
         }
         li{
             padding-bottom: 15px;
-           
+            font-size: 18px;
         }
       
     }
@@ -76,7 +77,7 @@ ul{
     }
 }
 
-@media(max-width:1100px){
+@media(max-width:1130px){
     .footer{
         .footerSection{
             padding: 0px 20px;

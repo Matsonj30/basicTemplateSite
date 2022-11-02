@@ -28,15 +28,16 @@ body {
 .headerMenu .fa {
   display: none;
 }
-.headerMenu .fa:active {
+.headerMenu .fa:hover {
   -webkit-animation: spin 0.5s;
           animation: spin 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 .headerMenu img {
   height: 100px;
   padding-left: 40px;
+}
+.headerMenu #burgerMenu {
+  background-color: #FAFAFA;
 }
 .headerMenu ul {
   display: flex;
@@ -66,6 +67,11 @@ body {
   font-weight: 600;
 }
 
+@media (min-width: 891px) {
+  .headerMenu #burgerMenu {
+    display: flex !important;
+  }
+}
 @media (max-width: 890px) {
   .headerMenu {
     position: relative;
@@ -99,22 +105,23 @@ body {
   }
   .headerMenu img {
     height: 80px;
+    padding-left: 10px;
   }
 }
 @-webkit-keyframes spin {
   25% {
-    transform: rotate(0deg);
+    transform-origin: rotate(0deg);
   }
   100% {
-    transform: rotate(90deg);
+    transform-origin: rotate(90deg);
   }
 }
 @keyframes spin {
   25% {
-    transform: rotate(0deg);
+    transform-origin: rotate(0deg);
   }
   100% {
-    transform: rotate(90deg);
+    transform-origin: rotate(90deg);
   }
 }
 .footer {
@@ -147,6 +154,7 @@ body {
 .footer .companyInfo .companyDescription {
   width: 300px;
   color: white;
+  font-size: 18px;
 }
 .footer .companyInfo img {
   height: 220px;
@@ -160,6 +168,7 @@ body {
 }
 .footer .footerSection li {
   padding-bottom: 15px;
+  font-size: 18px;
 }
 .footer .companySocials .socialsContainer {
   width: 21px;
@@ -188,7 +197,7 @@ ul {
   opacity: 60%;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1130px) {
   .footer .footerSection {
     padding: 0px 20px;
   }
@@ -370,6 +379,10 @@ ul {
   .mainContent {
     margin: 0;
   }
+  .mainContent h1 {
+    font-size: 40px;
+    letter-spacing: 0px;
+  }
   .mainContent button:hover {
     box-shadow: inset 0 0 0 0;
   }
@@ -380,6 +393,11 @@ ul {
   }
   .alignSellingPoint {
     display: none;
+  }
+}
+@media (max-width: 500px) {
+  .mainContent {
+    margin-left: 10px;
   }
 }
 .otherServices {
@@ -542,6 +560,9 @@ ul {
   .gallery .arrowContainer {
     justify-content: space-between;
     padding: 0px 10px;
+  }
+  .gallery .bottomImages img {
+    padding-top: 3px;
   }
 }
 .aboutUs p {

@@ -28,9 +28,11 @@ function showMenu(){ //for mainMenu section
     var currentMenuState = document.getElementById("burgerMenu");
     if(currentMenuState.style.display == "block"){
         currentMenuState.style.display = "none";
+        currentMenuState.style.display = "";
     }
     else{//it must be none
         currentMenuState.style.display ="block"
+
     }
     //this is def better to do by switching the class name isntead of styling in JS
 }
