@@ -34,7 +34,7 @@ body {
 }
 .headerMenu img {
   height: 100px;
-  padding-left: 40px;
+  padding-left: 10vw;
 }
 .headerMenu #burgerMenu {
   background-color: #FAFAFA;
